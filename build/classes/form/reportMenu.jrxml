@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d3679454-440f-45b9-8442-e7e96af93368">
+	<property name="ireport.zoom" value="0.9090909090909094"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from menu]]>
+	</queryString>
+	<field name="id_menu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_menu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="deskripsi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_menu">
+		<groupExpression><![CDATA[$F{id_menu}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="35" y="30" width="100" height="20" uuid="bb97e3fe-544f-401a-9a23-683d3a0ca039"/>
+				<text><![CDATA[id_menu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="30" width="100" height="20" uuid="444a77dd-b212-430e-a321-1e24649872e7"/>
+				<text><![CDATA[nama_menu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="30" width="100" height="20" uuid="103087aa-6f91-4363-aedc-fb658cf37b71"/>
+				<text><![CDATA[deskripsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="30" width="100" height="20" uuid="1c77ba2c-db37-48b6-9c0b-727a4c699db1"/>
+				<text><![CDATA[harga]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="50" width="555" height="1" uuid="8a280d65-3fd2-46b2-9a99-5cfc5a94f7e7"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="35" y="0" width="100" height="20" uuid="a2f7fb53-c802-44bc-a6b4-7a393c26f264"/>
+				<textFieldExpression><![CDATA[$F{id_menu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="0" width="100" height="20" uuid="c5a02cda-5f8a-4d83-910c-d8fc9e21d249"/>
+				<textFieldExpression><![CDATA[$F{nama_menu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="0" width="100" height="20" uuid="79d15a97-fa41-4e1b-adce-0f2cd0629032"/>
+				<textFieldExpression><![CDATA[$F{deskripsi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="100" height="20" uuid="42e9898d-bf93-416d-8f45-ef0cb59cd7cb"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
